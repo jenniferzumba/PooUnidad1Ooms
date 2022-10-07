@@ -8,7 +8,7 @@ package Grupo7_EJERCICIO_01_01;
  *
  * @author jenniferzumba
  */
-public class AnimalesVertebrados {
+public class AnimalesVertebrado {
     String especie;
     String nombre;
     int peso;
