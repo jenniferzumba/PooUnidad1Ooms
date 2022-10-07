@@ -14,17 +14,17 @@ public class Actividad01_Zumba_Gallego_CUJI {
     public static void main(String[] args) {
         System.out.println("Actividad01_JenniferZumba_TatianaGallego");
         
-        var animal1=new AnimalesVertebrado();
+        var animal1=new AnimalVertebrado();
         animal1.especie="mamifero";
         animal1.nombre="vaca";
         animal1.peso=720;
         animal1.tamaño=1.5;
-        var animal2=new AnimalesVertebrado();
+        var animal2=new AnimalVertebrado();
         animal2.especie="reptil";
         animal2.nombre="lagartija";
         animal2.peso=4;
         animal2.tamaño=30;
-        var animal3=new AnimalesVertebrado();
+        var animal3=new AnimalVertebrado();
         animal3.especie="anfibios";
         animal3.nombre="sapo";
         animal3.peso=25;
