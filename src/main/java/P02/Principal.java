@@ -64,7 +64,7 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto1.getProvincial());
         System.out.println("El numero de continente es; "+auto1.getNumeroContinente());
         System.out.println("El auto tiene "+auto1.calcularEdad(2022)+"years");
-        System.out.println("se puede asegura"+auto1.sepuedeAsegurar(2017));
+        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2017));
         
         
         var auto2 =new Auto();
@@ -81,6 +81,7 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto2.getProvincial());
         System.out.println("El numero de continente es; "+auto2.getNumeroContinente());
         System.out.println("El auto tiene "+auto2.calcularEdad(2022)+" years ");
+        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2019));
         
         var auto3 =new Auto();
         auto3.placa="ABF643";
@@ -94,7 +95,8 @@ public class Principal {
         System.out.println(auto3.mostrarInfo()+" el pais de origen de la marca es "+auto3.getPaisMarca());  
         System.out.println("La provincia de matricula es:"+ auto3.getProvincial());
         System.out.println("El numero de continente es; "+auto3.getNumeroContinente());
-        System.out.println("El auto tiene "+auto3.calcularEdad(2022)+" years ");      
+        System.out.println("El auto tiene "+auto3.calcularEdad(2022)+" years ");  
+        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2018));
         
         var auto4 =new Auto();
         auto4.placa="ABF432";
@@ -109,6 +111,9 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto4.getProvincial());
         System.out.println("El numero de continente es; "+auto4.getNumeroContinente());
         System.out.println("El auto tiene "+auto4.calcularEdad(2022)+" years "); 
+        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2016));
+        
+        
         var auto5 =new Auto();
         auto5.placa="AHU243";
         auto5.marca="Mercedez Benz";
@@ -122,6 +127,7 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto5.getProvincial());
         System.out.println("El numero de continente es; "+auto5.getNumeroContinente());
         System.out.println("El auto tiene "+auto5.calcularEdad(2022)+" years "); 
+        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2013));
         
               
     }

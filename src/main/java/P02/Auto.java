@@ -127,13 +127,24 @@ public class Auto {
     public boolean sepuedeAsegurar(int yearActual){
         var retorno=false;
         var edad=this.calcularEdad(yearActual);
-        if (edad<=5&&this.precio<1000){
+        if (edad<=5&&this.precio<10000){
             retorno=true;
         }
         else{
-            if (edad<=10&&this.precio>1000||edad>=15&&this.precio<20000){
+            if (edad<=10&&this.precio>10000||edad>=15&&this.precio<=20000){
                 retorno=true;
                 
+            }
+            else{
+                if (edad>15&&this.precio>20000||this.precio<=30000){
+                    retorno=true;
+                    
+                }
+                else{
+                    if(edad>15){
+                        retorno=false;
+                    }
+                }
             }
             
         }
