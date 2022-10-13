@@ -113,10 +113,25 @@ public class Auto {
     si la edad de edad>15 :6% del precio
     
     */
-    public double calcularCostoMatricula(int yearActual){
-        var retorno=0;
-        var edad=this.calcularEdad(yearActual);
-        
+    public double calcularCostoMatricula(int yearActual) {
+        var retorno = 0.0d;
+        var edad = this.calcularEdad(yearActual);
+        if (edad < 6) {
+            retorno = this.precio * 0.1;
+        } else {
+            if (edad > 5 && edad < 11) {
+                retorno = this.precio * 0.08;
+            } else {
+                if (edad > 10 && edad < 16) {
+                    retorno = this.precio * 0.07;
+                } else {
+                    if (edad > 16) {
+                        retorno = this.precio * 0.06;
+                    }
+
+                }
+            }
+        }
         
         return retorno;
     }
@@ -124,34 +139,29 @@ public class Auto {
     edad 10-15 de 10000 a 20000 si 
     edad>15  de 20000 a 30000 si 
     edad > 15 no*/
-    public boolean sepuedeAsegurar(int yearActual){
-        var retorno=false;
-        var edad=this.calcularEdad(yearActual);
-        if (edad<=5&&this.precio<10000){
-            retorno=true;
-        }
-        else{
-            if (edad<=10&&this.precio>10000||edad>=15&&this.precio<=20000){
-                retorno=true;
-                
-            }
-            else{
-                if (edad>15&&this.precio>20000||this.precio<=30000){
-                    retorno=true;
-                    
-                }
-                else{
-                    if(edad>15){
-                        retorno=false;
+    public boolean sepuedeAsegurar(int yearActual) {
+        var retorno = false;
+        var edad = this.calcularEdad(yearActual);
+        if (edad <= 5 && this.precio < 10000) {
+            retorno = true;
+        } else {
+            if (edad > 5 && edad < 11 && this.precio >= 10000 && this.precio <= 20000) {
+                retorno = true;
+            } else {
+                if (edad > 10 && edad < 16 && this.precio >= 20000 && this.precio <= 30000) {
+                    retorno = true;
+                } else {
+                    if (edad > 16) {
+                        retorno = false;
                     }
+
                 }
             }
-            
         }
         
         return retorno;
     }
-   // public boolean esClasico(int year)
+   
     
  
            

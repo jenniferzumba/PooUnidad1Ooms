@@ -64,8 +64,8 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto1.getProvincial());
         System.out.println("El numero de continente es; "+auto1.getNumeroContinente());
         System.out.println("El auto tiene "+auto1.calcularEdad(2022)+"years");
-        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2017));
-        
+        System.out.println("El auto es de "+auto1.getPaisMarca()+"\n"+auto1.getProvincial()+"\n"+auto1.calcularDepreciacion(2022)+"\n"+auto1.calcularIVA()+"\n"+auto1.calcularCostoMatricula(2022));
+
         
         var auto2 =new Auto();
         auto2.placa="ABF0467";
@@ -81,7 +81,7 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto2.getProvincial());
         System.out.println("El numero de continente es; "+auto2.getNumeroContinente());
         System.out.println("El auto tiene "+auto2.calcularEdad(2022)+" years ");
-        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2019));
+        System.out.println("El auto es de "+auto2.getPaisMarca()+"\n"+auto2.getProvincial()+"\n"+auto2.calcularDepreciacion(2022)+"\n"+auto2.calcularIVA()+"\n"+auto2.calcularCostoMatricula(2022));
         
         var auto3 =new Auto();
         auto3.placa="ABF643";
@@ -96,7 +96,8 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto3.getProvincial());
         System.out.println("El numero de continente es; "+auto3.getNumeroContinente());
         System.out.println("El auto tiene "+auto3.calcularEdad(2022)+" years ");  
-        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2018));
+        System.out.println("El auto es de "+auto3.getPaisMarca()+"\n"+auto3.getProvincial()+"\n"+auto3.calcularDepreciacion(2022)+"\n"+auto3.calcularIVA()+"\n"+auto3.calcularCostoMatricula(2022));
+
         
         var auto4 =new Auto();
         auto4.placa="ABF432";
@@ -111,7 +112,7 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto4.getProvincial());
         System.out.println("El numero de continente es; "+auto4.getNumeroContinente());
         System.out.println("El auto tiene "+auto4.calcularEdad(2022)+" years "); 
-        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2016));
+        System.out.println("El auto es de "+auto4.getPaisMarca()+"\n"+auto4.getProvincial()+"\n"+auto4.calcularDepreciacion(2022)+"\n"+auto4.calcularIVA()+"\n"+auto4.calcularCostoMatricula(2022));
         
         
         var auto5 =new Auto();
@@ -127,10 +128,14 @@ public class Principal {
         System.out.println("La provincia de matricula es:"+ auto5.getProvincial());
         System.out.println("El numero de continente es; "+auto5.getNumeroContinente());
         System.out.println("El auto tiene "+auto5.calcularEdad(2022)+" years "); 
-        System.out.println(" se puede asegura "+auto1.sepuedeAsegurar(2013));
+        System.out.println("El auto es de "+auto5.getPaisMarca()+"\n"+auto5.getProvincial()+"\n"+auto5.calcularDepreciacion(2022)+"\n"+auto5.calcularIVA()+"\n"+auto5.calcularCostoMatricula(2022));
+
         
+        
+        
+        
+    }  
               
-    }
     
     
 }
