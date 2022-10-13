@@ -54,44 +54,75 @@ public class Principal {
         auto1.placa="ABF6592";
         auto1.marca="Chevrolet";
         auto1.nombrePropietario=" Juana Moreno";
+        auto1.precio=15000;
+        auto1.color="Amarillo";
+        auto1.year=2017;
+        
         
        
         System.out.println(auto1.mostrarInfo()+" el pais de origen de la marca es "+auto1.getPaisMarca());  
+        System.out.println("La provincia de matricula es:"+ auto1.getProvincial());
+        System.out.println("El numero de continente es; "+auto1.getNumeroContinente());
+        System.out.println("El auto tiene "+auto1.calcularEdad(2022)+"years");
+        System.out.println("se puede asegura"+auto1.sepuedeAsegurar(2017));
         
         
         var auto2 =new Auto();
         auto2.placa="ABF0467";
         auto2.marca="Toyota";
         auto2.nombrePropietario=" Mariana ortiz";
+        auto2.precio=15000;
+        auto2.color="Gris";
+        auto2.year=2019;
+        
         
         
         System.out.println(auto2.mostrarInfo()+" el pais de origen de la marca es "+auto2.getPaisMarca());  
-        
+        System.out.println("La provincia de matricula es:"+ auto2.getProvincial());
+        System.out.println("El numero de continente es; "+auto2.getNumeroContinente());
+        System.out.println("El auto tiene "+auto2.calcularEdad(2022)+" years ");
         
         var auto3 =new Auto();
         auto3.placa="ABF643";
         auto3.marca="Jac";
         auto3.nombrePropietario=" luz Andrade";
+        auto3.precio=15000;
+        auto3.color="Azul";
+        auto3.year=2018;
         
         
         System.out.println(auto3.mostrarInfo()+" el pais de origen de la marca es "+auto3.getPaisMarca());  
-              
+        System.out.println("La provincia de matricula es:"+ auto3.getProvincial());
+        System.out.println("El numero de continente es; "+auto3.getNumeroContinente());
+        System.out.println("El auto tiene "+auto3.calcularEdad(2022)+" years ");      
         
         var auto4 =new Auto();
         auto4.placa="ABF432";
         auto4.marca="Ford";
         auto4.nombrePropietario=" fernanda Zumba";
+        auto4.precio=15000;
+        auto4.color="Blanco";
+        auto4.year=2016;
         
         
         System.out.println(auto4.mostrarInfo()+" el pais de origen de la marca es "+auto4.getPaisMarca());  
-        
+        System.out.println("La provincia de matricula es:"+ auto4.getProvincial());
+        System.out.println("El numero de continente es; "+auto4.getNumeroContinente());
+        System.out.println("El auto tiene "+auto4.calcularEdad(2022)+" years "); 
         var auto5 =new Auto();
         auto5.placa="AHU243";
         auto5.marca="Mercedez Benz";
         auto5.nombrePropietario=" Daniel Perez";
+        auto4.precio=15000;
+        auto4.color="rojo";
+        auto4.year=2013;
         
         
         System.out.println(auto5.mostrarInfo()+" el pais de origen de la marca es "+auto5.getPaisMarca());  
+        System.out.println("La provincia de matricula es:"+ auto5.getProvincial());
+        System.out.println("El numero de continente es; "+auto5.getNumeroContinente());
+        System.out.println("El auto tiene "+auto5.calcularEdad(2022)+" years "); 
+        
               
     }
     

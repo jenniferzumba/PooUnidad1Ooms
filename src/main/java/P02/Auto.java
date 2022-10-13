@@ -13,14 +13,37 @@ public class Auto {
     String placa;
     String marca;
     String nombrePropietario;
+    int year; 
+    String color;
+    double precio;
+    
+    
 
     public String mostrarInfo() {
-        var retorno = "El auto tiene placa: " + this.placa + " es de maraca " + this.marca + " y el propietario es: " + this.nombrePropietario;
+        var retorno = "El auto tiene placa: " + this.placa + " es de marca " + this.marca + " y el propietario es: " + this.nombrePropietario+" cuesta "+this.precio+" USD y es modelo: "+this.year;
 
         return retorno;
     }
     public String getProvincial() {
         var retorno = "";
+        var primeraLetra="";
+        primeraLetra=this.placa.substring(0,1);
+        switch (primeraLetra){
+            case "A":
+                retorno=" Azuay";
+                break;
+            case"P":
+                retorno="Pichincha";
+                break;
+            case"G":
+                retorno="Guayas";
+                break;
+            case"U":
+                retorno="Cañar";
+                break;  
+            default:
+                retorno="Provinvia no definida";
+        }
         return retorno;
     }
 
@@ -47,7 +70,78 @@ public class Auto {
     }
     public int getNumeroContinente() {
         var retorno = 0;
+        var marcaPais=this.getPaisMarca();
+        switch (marcaPais){
+            case"EE.UU":
+                retorno=2;
+                break;
+            case"Japon":
+                retorno=3;
+                break;
+            default:
+                retorno=0;
+        }
 
         return retorno;
     }
+    public double calcularIVA(){
+        var retorno=0.0d;
+        retorno=this.precio*0.12;
+        
+        return retorno;  
+    }
+    public int calcularEdad(int yearActual){
+        var retorno=0;        
+        retorno=yearActual-this.year;
+      
+        return retorno;
+    }
+    //10% por cada año de uso
+    //la depreciacion no puede exceder el precio
+    public double calcularDepreciacion(int yearActual){
+        var retorno=0.0d;
+        var edad=this.calcularEdad(yearActual);
+        retorno=edad*0.1*this.precio;
+        
+
+        return retorno;      
+    }
+    /*
+    si la edad de 0-5 :10% del precio
+    si la edad de 5-10 :8% del precio
+    si la edad de 10-15 :7% del precio
+    si la edad de edad>15 :6% del precio
+    
+    */
+    public double calcularCostoMatricula(int yearActual){
+        var retorno=0;
+        var edad=this.calcularEdad(yearActual);
+        
+        
+        return retorno;
+    }
+    /*edad 0-5 de 10000 si 
+    edad 10-15 de 10000 a 20000 si 
+    edad>15  de 20000 a 30000 si 
+    edad > 15 no*/
+    public boolean sepuedeAsegurar(int yearActual){
+        var retorno=false;
+        var edad=this.calcularEdad(yearActual);
+        if (edad<=5&&this.precio<1000){
+            retorno=true;
+        }
+        else{
+            if (edad<=10&&this.precio>1000||edad>=15&&this.precio<20000){
+                retorno=true;
+                
+            }
+            
+        }
+        
+        return retorno;
+    }
+   // public boolean esClasico(int year)
+    
+ 
+           
 }
