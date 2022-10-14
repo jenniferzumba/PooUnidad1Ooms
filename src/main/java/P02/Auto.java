@@ -16,7 +16,7 @@ public class Auto {
     int year; 
     String color;
     double precio;
-    int cilindrajeMotor;
+    int cilindraje;
     
     
 
@@ -189,7 +189,31 @@ public class Auto {
     */
     public double calcularTasaSolidaria(int yearActual, double limitePrecio){
         var retorno=0.0d;
-        
+        var edad = this.calcularEdad(yearActual);
+        if((edad>=0)&&(edad<5)&&(cilindraje<1500)){
+            retorno=precio*0.15;
+        }
+        if((edad>=0)&&(edad<5)&&(cilindraje>1500)&&(cilindraje<2000)){
+            retorno=precio*0.20;
+        }
+        if((edad>=0)&&(edad<5)&&(cilindraje>2000)){
+            retorno=precio*0.25;
+        }
+        if((edad>=5)&&(edad<15)&&(cilindraje<1500)){
+            retorno=precio*0.10;
+        }
+        if((edad>=5)&&(edad<15)&&(cilindraje>1500)&&(cilindraje<2000)){
+            retorno=precio*0.15;
+        }
+        if((edad>=5)&&(edad<15)&&(cilindraje<2000)){
+            retorno=precio*0.18;
+        }
+        if((edad>=15)&&(edad<20)){
+            retorno=precio*0.5;
+        }
+        if((edad>20)){
+            retorno=precio;
+        }
         
         
         return retorno;
