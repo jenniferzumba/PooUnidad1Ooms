@@ -42,16 +42,10 @@ public class Principal {
         electronica.vigente=true;
         
         System.out.println(electronica.mostrarInformacion());*/
-        
-        
-        
-        
-        
-        
-        
+
         
         var auto1 =new Auto();
-        auto1.placa="ABF6592";
+        auto1.placa="AB456FD";
         auto1.marca="Chevrolet";
         auto1.nombrePropietario=" Juana Moreno";
         auto1.precio=15000;
@@ -65,8 +59,9 @@ public class Principal {
         System.out.println("El numero de continente es; "+auto1.getNumeroContinente());
         System.out.println("El auto tiene "+auto1.calcularEdad(2022)+"years");
         System.out.println("El auto es de "+auto1.getPaisMarca()+"\n"+auto1.getProvincial()+"\n"+auto1.calcularDepreciacion(2022)+"\n"+auto1.calcularIVA()+"\n"+auto1.calcularCostoMatricula(2022));
-
-        
+        System.out.println("El estado de la placa es: "+auto1.esPlacaValidA());
+         
+        /*
         var auto2 =new Auto();
         auto2.placa="ABF0467";
         auto2.marca="Toyota";
@@ -132,9 +127,9 @@ public class Principal {
 
         
         
+        */
         
-        
-    }  
+    } 
               
     
     

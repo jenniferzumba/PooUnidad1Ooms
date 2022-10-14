@@ -16,6 +16,7 @@ public class Auto {
     int year; 
     String color;
     double precio;
+    int cilindrajeMotor;
     
     
 
@@ -161,6 +162,65 @@ public class Auto {
         
         return retorno;
     }
+    public boolean esClasico(int yearActual, int yearClasico){
+        var retorno=false;
+        
+        return retorno;
+        
+    }
+    /*
+    edad >20: tasa solidaria 0
+    edad0-5 : y cilidraje <1500: tasa solidaria 15% costo
+    edad0-5 : y cilidraje >1500<2000: tasa solidaria 20% costo
+    edad0-5 : y cilidraje >2000: tasa solidaria 25% costo
+    edad0-5 : y cilidraje <1500: tasa solidaria 10% costo
+    edad0-5 : y cilidraje >1500<2000: tasa solidaria 15% costo
+    edad0-5 : y cilidraje >2000: tasa solidaria 18% costo
+    edad 
+
+    
+    //g1 y g2 Auto 7años, 1600cc, 18000USD = 2700USD
+    //g3 y g8 Auto 4años, 1000cc, 8000USD = 1200USD
+    //g3 y g9 Auto 16años, 2000cc, 10000USD = 5000USD
+    //g4 y g10 Auto 8años, 3600cc, 17000USD = 3060USD
+    //g5 y g11 Auto 9años, 1200cc, 1100USD = 110 USD
+    //g6 y g12 Auto 21años, 1000cc, 14000USD = 0 USD
+    //g7 y g13 Auto 19años, 24000cc, 16000USD = 800USD
+    */
+    public double calcularTasaSolidaria(int yearActual, double limitePrecio){
+        var retorno=0.0d;
+        
+        
+        
+        return retorno;
+        
+    }
+    public boolean esPlacaValidA(){
+        var retorno=false;
+        var longitud=this.placa.length();
+        if(longitud==7){
+            var caracter1=this.placa.charAt(0);
+            var caracter2=this.placa.charAt(1);
+            var caracter3=this.placa.charAt(2);
+            var caracter4=this.placa.charAt(3);
+            var caracter5=this.placa.charAt(4);
+            var caracter6=this.placa.charAt(5);
+            var caracter7=this.placa.charAt(6);    
+        
+        if(Character.isLetter(caracter1)
+                &&Character.isLetter(caracter2)
+                &&Character.isLetter(caracter3)&&Character.isDigit(caracter4)
+                &&Character.isDigit(caracter5)&&Character.isDigit(caracter6)
+                &&Character.isDigit(caracter7)){
+            retorno= true;
+            
+        }
+        
+       
+        }    
+       return retorno;
+    }
+    
    
     
  
