@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class PrincipalUnidad0103 {
      public static void main(String[] args){
     var a = 0;
-       /* System.out.println("a = " + a);
+      /*  System.out.println("a = " + a);
 
         a++;
         System.out.println("a = " + a);
@@ -68,31 +68,101 @@ public class PrincipalUnidad0103 {
         }
         for (var i = 0; i < numeroDecimalList.length; i++) {
             System.out.println(numeroDecimalList[i]);
-        }*/
+        }
+       */
     
-        
-        
+        // ejercicio 2
+      /*  System.out.println(" ingresar la dimension del arreglo unidimendional o arreglo");
         var lectura = new Scanner(System.in);
-        System.out.println("Ingresa la dimension del arreglo ");
         var dimension = lectura.nextInt();
             
         System.out.println("Ingrese los numeros");
         var numero=new int[dimension];
         
         
-        for (int i=0;i<dimension;i++){
+        
+        for (int i=0; i<numero.length; i++){
+            System.out.println("ingresar el  numero de la posicion "+(i+1));
              numero[i] =lectura.nextInt();
         }
-        for(int j=0;j<dimension;j++){
-            System.out.println(" La posicion del numero " +j+" es "+numero[j] );
+        for(int  i=0;i<numero.length;i++){
+            System.out.println(" La posicion del numero " +i+" es "+numero[i] );
             
         }
+        
+        System.out.println("ingrese el numero de filas que tendra la matriz");
+        var fila=lectura.nextInt();
+        System.out.println("ingrese el numero de colunmas que tendra la matriz");
+        var columna=lectura.nextInt(); 
+        
+        var matriz =new int [fila][columna];
+        
+        System.out.println("ingrese el valor correspondiente a la posicion 0,0");
+        matriz[0][0]=lectura.nextInt();
+        System.out.println("ingrese el valor correspondiente a la posicion 0,1");
+        matriz[0][1]=lectura.nextInt();
+        System.out.println("ingrese el valor correspondiente a la posicion 0,2");
+        matriz[0][2]=lectura.nextInt();
+        System.out.println("ingrese el valor correspondiente a la posicion 1,0");
+        matriz[1][0]=lectura.nextInt();
+        System.out.println("ingrese el valor correspondiente a la posicion 1,1");
+        matriz[1][1]=lectura.nextInt();
+        System.out.println("ingrese el valor correspondiente a la posicion 1,2");
+        matriz[1][2]=lectura.nextInt();
+        
+        System.out.println(matriz[0][0]+" "+matriz[0][1]+" "+matriz [0][2]);
+        System.out.println(matriz[1][0]+" "+matriz[1][1]+" "+matriz [1][2]);      
+        
+        */
+        var lectura = new Scanner(System.in);
+        
+        System.out.println("ingrese el numero de filas que tendra la matriz");
+        var filas=lectura.nextInt();
+        System.out.println("ingrese el numero de colunmas que tendra la matriz");
+        var columnas=lectura.nextInt(); 
+        
+        var matriz =new int[filas][columnas];
+        
+        for (int i= 0; i <filas; i++){
+            for(int j=0; j<columnas;j++){
+                System.out.println("Ingrese el numero en la posicion " +i +", "+j);
+                matriz[i] [j]=lectura.nextInt();
+                
+            }      
            
+        }
+        for(int i=0;i<filas;i++){
+            for(int j=0; j<columnas;j++){
+                System.out.print( matriz[i]  [j]);
+            }
+            System.out.println("  ");
+            
+        }
         
         
-        
-        
+       /* var matriz=new int[filas][columnas];
+        var i=0;
+        while(i<matriz.length){
+            var j=0;
+            while(j<matriz[i].length){
+                System.out.println(matriz[i][j]);
+                j++;
+            }
+            i++;
+        }
+        for (i=0; i<matriz.length; i++){
+            for (var j=0; j<matriz[i].length;j++){
+                System.out.println(matriz[i][j]*10);
+                
+            }
+        }
+        for (int x[]:matriz){
+            for (var y:x){
+                System.out.println(y*100);
+            }
+        }*/
  
+         
         
     }
 
