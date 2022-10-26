@@ -8,19 +8,30 @@ package unidad01_04;
  *
  * @author jenniferzumba
  */
-public class Tecnico {
-    String nombre;
-    int fechaNacimiento;
-    int yearContrato;
-    Seleccion equipo;
+public class Tecnico extends Persona{
+    private String nombre;
+    private int fechaNacimiento;
+    private int yearContrato;
+    private Seleccion equipo;
     
     
     
-    public String mostarInfo(){
-        return"El director tecnico "+this.nombre+
-                " nacido en el year "+this.fechaNacimiento+
+    public String mostarInfoTecnico(){
+        return this.mostrarInfo()+"El director tecnico "+this.getNombre()+
+                " nacido en el year "+this.getFechaNacimiento()+
                 " con "+this.yearContrato+" years de expreriencia "
-                + "que actualmente dirige al equipo de "+this.equipo.nombre;
+                + "que actualmente dirige al equipo de "+this.equipo.getNombre();
     }
+
     
+
+    public void setYearContrato(int yearContrato) {
+        this.yearContrato = yearContrato;
+    }
+
+    public void setEquipo(Seleccion equipo) {
+        this.equipo = equipo;
+    }
+
+   
 }

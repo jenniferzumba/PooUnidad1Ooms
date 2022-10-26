@@ -8,16 +8,34 @@ package unidad01_04;
  *
  * @author jenniferzumba
  */
-public class Jugador {
+public class Jugador extends Persona{
     
-    String nombre;
-     int fechaNacimiento;
-     String posicion;
-     Seleccion equipo;
+    
+    private  String posicion;
+    private Seleccion equipo;
+    
+    public String mostarInfoJugador(){
+        return this.mostrarInfo()+" juega en la posición de: "+this.posicion
+                 +" pertenece al esquipo de: "+this.equipo.getNombre();
+    }
 
 
-     public String mostrarInfo(){
-       return this.nombre+" juega en la selección de "+this.equipo.nombre;
-     }
     
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
+    }
+
+    public void setEquipo(Seleccion equipo) {
+        this.equipo = equipo;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public Seleccion getEquipo() {
+        return equipo;
+    }
+    
+     
 }

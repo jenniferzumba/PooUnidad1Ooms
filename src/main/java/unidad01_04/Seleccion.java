@@ -10,9 +10,9 @@ package unidad01_04;
  */
 public class Seleccion {
 
-    String codigoFIFA;
-    String nombre;
-    int participacionesMundial;
+    private String codigoFIFA;
+    private String nombre;
+    private int participacionesMundial;
 
     public String obtienePais() {
         var retorno = "Desconocido";
@@ -37,6 +37,31 @@ public class Seleccion {
 
         return retorno;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCodigoFIFA() {
+        return codigoFIFA;
+    }
+
+    public int getParticipacionesMundial() {
+        return participacionesMundial;
+    }
+
+    public void setCodigoFIFA(String codigoFIFA) {
+        this.codigoFIFA = codigoFIFA;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setParticipacionesMundial(int participacionesMundial) {
+        this.participacionesMundial = participacionesMundial;
+    }
+    
 
     
 }
