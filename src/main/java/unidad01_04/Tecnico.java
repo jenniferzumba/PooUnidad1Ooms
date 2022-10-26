@@ -9,8 +9,7 @@ package unidad01_04;
  * @author jenniferzumba
  */
 public class Tecnico extends Persona{
-    private String nombre;
-    private int fechaNacimiento;
+   
     private int yearContrato;
     private Seleccion equipo;
     
