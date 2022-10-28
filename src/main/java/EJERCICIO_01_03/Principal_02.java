@@ -17,8 +17,8 @@ public class Principal_02 {
         var estudiante=new Estudiante(" Juan Matias",15,"0350150959","centro de Azogues ");
         var estudiante2=new Estudiante(" Maria Paula",14,"0863567559","chaullabamba ");
         
-        var calificacion=new Calificacion(7.8,8.9,estudiante,asignatura);
-        var calificacion2=new Calificacion(6.7,8.2,estudiante2,asignatura2);
+        var calificacion=new Calificacion(8.9,estudiante,asignatura);
+        var calificacion2=new Calificacion(8.2,estudiante2,asignatura2);
         
         System.out.println(asignatura.mostrarInfo());
         System.out.println(asignatura2.mostrarInfo());

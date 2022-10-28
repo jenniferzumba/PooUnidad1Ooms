@@ -9,27 +9,25 @@ package EJERCICIO_01_03;
  * @author jenniferzumba
  */
 public class Calificacion {
-    private double promedio;
+    
     private double notaFinal;
     private Estudiante persona;
     private Asignatura materia;
 
-    public Calificacion(double promedio, double notaFinal, Estudiante persona, Asignatura ma) {
-        this.promedio = promedio;
+    public Calificacion(double notaFinal, Estudiante persona, Asignatura ma) {
+        
         this.notaFinal = notaFinal;
         this.persona = persona;
         this.materia = ma;
     }
     public String mostrarInfo(){
         return"El estudiante"+this.persona.getNombre()+
-                " tiene un promedio de "+this.getPromedio()+
-                " en la mitad de la materia de "+this.materia.getNombreAsig()+
-                " por lo que en total de todos sus resultados la nota final es de"+this.getNotaFinal();
+                " en la materia de "+this.materia.getNombreAsig()+
+                " tiene como   nota final "+this.getNotaFinal();
     }
 
-    public double getPromedio() {
-        return promedio;
-    }
+    
+    
 
     public double getNotaFinal() {
         return notaFinal;
@@ -43,9 +41,6 @@ public class Calificacion {
         return materia;
     }
 
-    public void setPromedio(double promedio) {
-        this.promedio = promedio;
-    }
 
     public void setNotaFinal(double notaFinal) {
         this.notaFinal = notaFinal;
