@@ -12,11 +12,13 @@ public class Universidad {
     private String edificio;
     private int fechaFundacion;
     private int numeroAula;
+    private String nombre;
 
-    public Universidad(String edificio, int fechaFundacion, int numeroAula) {
+    public Universidad(String edificio, int fechaFundacion, int numeroAula,String no) {
         this.edificio = edificio;
         this.fechaFundacion = fechaFundacion;
         this.numeroAula = numeroAula;
+        this.nombre=no;
     }
     public String mostrarInfo(){
         return" la universidad politecnica fue fundada en el year "
@@ -46,6 +48,14 @@ public class Universidad {
 
     public void setNumeroAula(int numeroAula) {
         this.numeroAula = numeroAula;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     

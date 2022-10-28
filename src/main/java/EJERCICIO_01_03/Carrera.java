@@ -12,18 +12,18 @@ public class Carrera {
     private int semestre;
     private String nombreCarrera;
     private double costoSemestre;
-    private Universidad Personal;
+    private Universidad universidad;
 
-    public Carrera(int semestre, String nombreCarrera, double costoSemestre, Universidad Personal) {
+    public Carrera(int semestre, String nombreCarrera, double costoSemestre, Universidad uni) {
         this.semestre = semestre;
         this.nombreCarrera = nombreCarrera;
         this.costoSemestre = costoSemestre;
-        this.Personal = Personal;
+        this.universidad = uni;
     }
     public String mostrarInfo(){
-        return "Esta en el semestre : "+this.semestre+
-            "el nombre de la carrera es : "+this.nombreCarrera+
-            "el costo del semestre es : "+this.costoSemestre;
+        return "En la universidad de "+this.universidad.getNombre()+" se ofrece carreras con  : "+this.semestre+
+            " semestre  la carrera  mas demandada es : "+this.nombreCarrera+
+            " y el costo del semestre es : "+this.costoSemestre;
     }
 
     public void setSemestre(int semestre) {
@@ -38,8 +38,8 @@ public class Carrera {
         this.costoSemestre = costoSemestre;
     }
 
-    public void setPersonal(Universidad Personal) {
-        this.Personal = Personal;
+    public void setPersonal(Universidad uni) {
+        this.universidad = uni;
     }
 
     public int getSemestre() {
@@ -54,8 +54,8 @@ public class Carrera {
         return costoSemestre;
     }
 
-    public Universidad getPersonal() {
-        return Personal;
+    public Universidad getUniversidad() {
+        return universidad;
     }
     
     
